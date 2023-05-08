@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cypqhqs32j44r"]
+
+[ext_resource type="Script" path="res://Classes/Character.gd" id="1_stenc"]
+
+[node name="Character" type="CharacterBody2D" node_paths=PackedStringArray("equipment")]
+motion_mode = 1
+script = ExtResource("1_stenc")
+equipment = NodePath("")

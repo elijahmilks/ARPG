@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0blmjekr6dfc"]
+
+[ext_resource type="Script" path="res://Gear/Weapons/Pistol/Pistol.gd" id="1_rapul"]
+
+[node name="Pistol" type="Sprite2D"]
+script = ExtResource("1_rapul")
+reload_rate = 0.8

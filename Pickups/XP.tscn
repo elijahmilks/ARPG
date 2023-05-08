@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://byfcwmakl5lsa"]
+
+[ext_resource type="Script" path="res://Pickups/XP.gd" id="1_d5mdf"]
+[ext_resource type="Texture2D" uid="uid://csa8lyp0f8udw" path="res://Assets/Interactable.png" id="2_4c87s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xc4jd"]
+size = Vector2(4, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oa6ih"]
+atlas = ExtResource("2_4c87s")
+region = Rect2(0, 11, 4, 4)
+
+[node name="XP" type="Area2D" groups=["xp"]]
+collision_layer = 8
+collision_mask = 8
+monitoring = false
+script = ExtResource("1_d5mdf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_xc4jd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = SubResource("AtlasTexture_oa6ih")
