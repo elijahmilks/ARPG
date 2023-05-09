@@ -21,6 +21,6 @@ func _on_enemy_killed(enemy: Character):
 		var xp = XP.instantiate();
 		xp.global_position = enemy.global_position;
 		xp.value = enemy.xp_value;
-		$XP.add_child(xp);
+		$XP.call_deferred("add_child", xp);
 
 	enemy.queue_free();
